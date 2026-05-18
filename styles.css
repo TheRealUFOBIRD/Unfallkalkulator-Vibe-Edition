@@ -161,6 +161,11 @@ body.full-risk::after {
   text-transform: uppercase;
 }
 
+.result-head .eyebrow {
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+}
+
 .hero h1,
 .panel-head h2,
 .result-copy h2 {
