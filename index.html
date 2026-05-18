@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unfallkalkulator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow background-glow-left"></div>
+  <div class="background-glow background-glow-right"></div>
+
+  <main class="page-shell">
+    <section class="hero glass-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Risikoanalyse in Sekunden</p>
+        <h1>Unfallkalkulator</h1>
+        <p class="hero-text">
+          Wähle in allen fünf Kategorien eine Option aus und berechne mit einem Klick die
+          geschätzte Unfallwahrscheinlichkeit.
+        </p>
+      </div>
+    </section>
+
+    <section class="calculator-grid">
+      <article class="glass-panel selection-panel">
+        <div class="panel-head">
+          <h2>Kategorien auswählen</h2>
+          <p>Jede Auswahl verändert das Gesamtrisiko.</p>
+        </div>
+
+        <form class="selection-grid" id="calculator-form">
+          <label class="select-card" for="transport">
+            <span>Fortbewegungsmittel</span>
+            <select id="transport" name="transport" required>
+              <option value="">Bitte wählen</option>
+            </select>
+          </label>
+
+          <label class="select-card" for="weather">
+            <span>Wetter</span>
+            <select id="weather" name="weather" required>
+              <option value="">Bitte wählen</option>
+            </select>
+          </label>
+
+          <label class="select-card" for="mood">
+            <span>Laune</span>
+            <select id="mood" name="mood" required>
+              <option value="">Bitte wählen</option>
+            </select>
+          </label>
+
+          <label class="select-card" for="sobriety">
+            <span>Nüchternheit</span>
+            <select id="sobriety" name="sobriety" required>
+              <option value="">Bitte wählen</option>
+            </select>
+          </label>
+
+          <label class="select-card" for="condition">
+            <span>Zustand</span>
+            <select id="condition" name="condition" required>
+              <option value="">Bitte wählen</option>
+            </select>
+          </label>
+        </form>
+
+        <div class="action-row">
+          <p class="helper-text" id="helper-text">Treffe fünf Auswahlen und starte dann die Berechnung.</p>
+          <div class="action-buttons">
+            <button class="mode-button" id="derek-button" type="button">Derek mode</button>
+            <button class="calculate-button" id="calculate-button" type="button">Jetzt berechnen</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass-panel result-panel" id="result-panel">
+        <div class="result-head">
+          <p class="eyebrow">Ergebnis</p>
+          <span class="risk-pill" id="risk-pill">Bereit</span>
+        </div>
+
+        <div class="result-main">
+          <div class="result-ring">
+            <div class="ring-core">
+              <span class="result-number" id="result-number">0%</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="result-copy">
+          <h2 id="result-title">Noch keine Berechnung</h2>
+          <p id="result-description">
+            Nach dem Klick auf den Button erscheint hier eine Einschätzung auf Basis deiner Auswahl.
+          </p>
+        </div>
+
+      </article>
+    </section>
+  </main>
+</body>
+</html>
