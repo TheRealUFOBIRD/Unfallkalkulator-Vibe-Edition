@@ -172,6 +172,21 @@ body.full-risk::after {
 .hero h1 {
   font-size: clamp(2.2rem, 5vw, 4.4rem);
   line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.title-edition {
+  display: inline-block;
+  margin-left: 0.45rem;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  vertical-align: middle;
+  background: linear-gradient(90deg, #7fff8d 0%, #ffe66b 52%, #ff5c5c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 22px rgba(127, 255, 141, 0.12);
 }
 
 .hero-text,
@@ -714,6 +729,12 @@ body.derek-mode .result-ring::after {
 
   .result-copy {
     margin-top: 2rem;
+  }
+
+  .title-edition {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.45rem;
   }
 }
 
