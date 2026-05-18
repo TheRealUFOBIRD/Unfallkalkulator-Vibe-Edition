@@ -194,7 +194,7 @@ function getRiskMeta(score) {
       return {
         title: "Erhöhte Gefahr",
         description: "Die Kombination enthält deutliche Risikotreiber. Zusätzliche Vorsicht wäre angebracht.",
-        pill: "Bruder las Los",
+        pill: "Bruder lass Los",
         tone: "high"
       };
     }
